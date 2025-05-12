@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Roi de l'Europe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      height: 100%;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      box-sizing: border-box;
+      color: white;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .chapter1 { background-image: url('resources/images/chapter1.jpeg'); }
+    .chapter2 { background-image: url('resources/images/chapter2.jpeg'); }
+    .chapter3 { background-image: url('resources/images/chapter3.jpeg'); }
+    .chapter4 { background-image: url('resources/images/chapter4.jpeg'); }
+    .chapter5 { background-image: url('resources/images/chapter5.jpeg'); }
+    .chapter6 { background-image: url('resources/images/chapter6.jpeg'); }
+    .chapter7 { background-image: url('resources/images/chapter7.jpeg'); }
+
+    h1, p {
+      max-width: 800px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .nav {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav a {
+      width: 12px;
+      height: 12px;
+      background: white;
+      border-radius: 50%;
+      display: block;
+      opacity: 0.5;
+      transition: opacity 0.3s;
+    }
+
+    .nav a:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="#c1"></a>
+    <a href="#c2"></a>
+    <a href="#c3"></a>
+    <a href="#c4"></a>
+    <a href="#c5"></a>
+    <a href="#c6"></a>
+    <a href="#c7"></a>
+  </div>
+
+  <section id="c1" class="chapter1">
+    <div>
+      <h1>Chapitre 1 : Le pari</h1>
+      <p>Paulin et Lucas, en voyage à travers l'Europe, décident de s'affronter sur les playgrounds de chaque ville visitée. Celui qui aura le plus de victoires sera couronné "Roi de l'Europe".</p>
+    </div>
+  </section>
+
+  <section id="c2" class="chapter2">
+    <div>
+      <h1>Chapitre 2 : Le ballon</h1>
+      <p>Il a fallu acheter plusieurs ballons pour faire durer l'aventure. Leur préféré ? Une trouvaille unique dans un bazar turc, un ballon usé mais chargé d'histoire.</p>
+    </div>
+  </section>
+
+  <section id="c3" class="chapter3">
+    <div>
+      <h1>Chapitre 3 : Madrid</h1>
+      <p>Premier terrain, premier choc. Paulin réalise que le voyage va être long : Lucas survole le match. Score inconnu, mais une raclée mémorable. Paulin invoque une excuse : il n'a pas mangé le matin.</p>
+    </div>
+  </section>
+
+  <section id="c4" class="chapter4">
+    <div>
+      <h1>Chapitre 4 : Séville</h1>
+      <p>Un 1 contre 1 brûlant sous le soleil andalou, en attendant le Airbnb. Lucas reste imperturbable. Paulin subit une nouvelle défaite. Un passant, cigarette au bec, observe la scène. Excuse du jour : pas d’échauffement.</p>
+    </div>
+  </section>
+
+  <section id="c5" class="chapter5">
+    <div>
+      <h1>Chapitre 5 : Ayvalik</h1>
+      <p>Lucas vacille ? Paulin enchaîne trois points et croit à la remontada. Mais Lucas réagit, infligeant un 21-0 implacable. Moralité : s’échauffer c’est bien, mais ça ne suffit pas.</p>
+    </div>
+  </section>
+
+  <section id="c6" class="chapter6">
+    <div>
+      <h1>Chapitre 6 : Athènes</h1>
+      <p>Le cadre : un terrain mythique, celui de Giannis. L’ultime confrontation. Fidèle à lui-même, Lucas clôt l'aventure comme il l'a commencée. Une victoire de plus. Le Loup reste invaincu.</p>
+    </div>
+  </section>
+
+  <section id="c7" class="chapter7">
+    <div>
+      <h1>Épilogue : Le Roi de l'Europe</h1>
+      <p>Des souvenirs, des matchs, des excuses. Mais une certitude : il n’en restera qu’un. Paulin aura combattu vaillamment… mais Lucas devient à jamais le Roi de l’Europe.</p>
+    </div>
+  </section>
+</body>
+</html>
